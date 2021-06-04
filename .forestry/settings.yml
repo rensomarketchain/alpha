@@ -5,25 +5,27 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/blog
+  path: content/project
   label: Project
   create: documents
   match: "*"
   templates:
   - post
 - type: directory
-  path: content/about
+  path: content/targets
   label: Targets
-  create: none
+  create: documents
   match: "*"
+  templates:
+  - post
 - type: directory
-  path: data
+  path: Roadmap
   label: Roadmap
   create: documents
   match: "*"
   new_doc_ext: yml
 - type: directory
-  path: content/portfolio
+  path: content/team
   label: Team
   create: none
   match: "*"
